@@ -1,0 +1,362 @@
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.cart-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding-bottom: 50px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.cart-container h1 {
+  text-align: center;
+
+  font-size: 32px;
+
+  color: #111827;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+.cart-total {
+  text-align: right;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   TOP BUTTONS
+========================= */
+
+.cart-container > button {
+  display: block;
+
+  margin-left: auto;
+  margin-bottom: 25px;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+/* Clear Cart */
+
+.clear-cart {
+  background-color: #ef4444;
+}
+
+.clear-cart:hover {
+  background-color: #dc2626;
+}
+
+
+/* Add Products */
+
+.add-products {
+  background-color: #2563eb;
+}
+
+.add-products:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* =========================
+   EMPTY CART
+========================= */
+
+.empty-cart {
+  text-align: center;
+
+  margin-top: 80px;
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  color: #6b7280;
+}
+
+
+/* =========================
+   CART LIST
+========================= */
+
+.cart-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* =========================
+   CART ITEM
+========================= */
+
+.cart-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 20px;
+
+  background-color: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.05);
+
+  transition: 0.2s ease;
+}
+
+
+.cart-item:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.cart-item img {
+  width: 150px;
+
+  height: 130px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  background-color: #f3f4f6;
+}
+
+
+/* =========================
+   PRODUCT DETAILS
+========================= */
+
+.cart-details {
+  flex: 1;
+}
+
+
+.cart-details h2 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+
+  color: #111827;
+}
+
+
+.cart-details p {
+  margin: 0 0 12px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  text-transform: capitalize;
+}
+
+
+.cart-details h3 {
+  margin: 0 0 15px;
+
+  font-size: 20px;
+
+  color: #2563eb;
+}
+
+
+/* =========================
+   QUANTITY
+========================= */
+
+.quantity-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 15px;
+}
+
+
+.quantity-btn {
+  width: 35px;
+
+  height: 35px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.quantity-btn:hover {
+  background-color: #1d4ed8;
+}
+
+
+.quantity-box span {
+  min-width: 30px;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+
+/* =========================
+   REMOVE BUTTON
+========================= */
+
+.remove-btn {
+  padding: 8px 16px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #ef4444;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.remove-btn:hover {
+  background-color: #dc2626;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .cart-container {
+    width: 92%;
+
+    margin-top: 25px;
+  }
+
+
+  .cart-container h1 {
+    font-size: 26px;
+  }
+
+
+  .cart-total {
+    font-size: 19px;
+  }
+
+
+  .cart-item {
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+
+  .cart-item img {
+    width: 100px;
+
+    height: 100px;
+  }
+
+
+  .cart-details h2 {
+    font-size: 16px;
+  }
+
+
+  .cart-details h3 {
+    font-size: 17px;
+  }
+
+
+  .quantity-box {
+    gap: 8px;
+  }
+
+
+  .quantity-btn {
+    width: 32px;
+
+    height: 32px;
+
+    font-size: 18px;
+  }
+
+}
